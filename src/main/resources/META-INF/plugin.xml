@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.github.wenjun.plugins.sample</id>
+    <name>Scala-Antlr Sample</name>
+    <version>0.1</version>
+    <vendor>Wenjun Huang</vendor>
+    <description><![CDATA[
+    Hello World!
+]]></description>
+
+    <depends>com.intellij.modules.lang</depends>
+    <project-components>
+        <component>
+            <implementation-class>com.github.wenjun.plugins.sample.SamplePluginController</implementation-class>
+        </component>
+    </project-components>
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="com.github.wenjun.plugins.sample.SampleFileTypeFactory"/>
+        <lang.parserDefinition language="Sample"/>
+
+    </extensions>
+</idea-plugin>
