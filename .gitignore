@@ -10,6 +10,7 @@ src_managed/
 project/boot/
 project/plugins/project/
 .history
+.idea
 .cache
 .lib/
 
